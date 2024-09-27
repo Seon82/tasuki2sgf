@@ -4,6 +4,9 @@ This project is a simple python script that can be used to generate `.sgf` files
 
 To do so, we simply parse the `.tex` files used to generate the pdf versions of the problems.
 
+## Download sgf files
+
+Pregenerated `.sgf` files are available [here](./generated).
 
 ## Usage
 
