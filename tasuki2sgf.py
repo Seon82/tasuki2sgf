@@ -242,7 +242,7 @@ def merge_sgfs(
     all_games = f"(;FF[4]GM[1]SZ[19]\nC[{comment}]"
     for file in sorted(
         Path(sgf_dir).glob("*.sgf"),
-        key=lambda p: int(re.findall(r"\d+", str(p.stem))[0]),
+        key=lambda p: [int(x) for x in re.findall(r"\d+", str(p.stem))],
     ):
         with open(file, "r") as f:
             game = f.read()
